@@ -93,6 +93,9 @@ td > img {
     width: 10%;
     height: 90px;
 }
+td > img:hover {
+    transform: scale(1.05);
+}
 
 table tr:nth-child(1) {
     font-size: 24px;
@@ -127,7 +130,7 @@ table tr:nth-child(10) {
         height: 40px;
     }
     header > img {
-        width: 50px;
+        width: 45px;
         height: 50px;
     }
     #dropdown-menu {
