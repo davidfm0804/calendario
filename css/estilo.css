@@ -96,13 +96,6 @@ td > img {
 td > img:hover {
     transform: scale(1.05);
 }
-td > a> img {
-    width: 10%;
-    height: 90px;
-}
-td > a>img:hover {
-    transform: scale(1.05);
-}
 
 table tr:nth-child(1) {
     font-size: 24px;
