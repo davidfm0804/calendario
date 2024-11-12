@@ -10,80 +10,84 @@
 </head>
 <body>
     <header>
-        <img src="img/marca.png" id="menu-icon">
-        <hr>
-        <div id="dropdown-menu" class="hidden">
+        <nav>
+            <img src="img/marca.png" id="menu-icon" alt="Icono del menú">
             
-            <ul>
-                <li><a href="CalendarioDiciembre.html">Calendario de Diciembre</a></li>
-            </ul>
-        </div>
+            <div id="dropdown-menu" class="hidden">
+                <ul>
+                    <li><a href="CalendarioDiciembre.html">Calendario de Diciembre</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <div>
-        <table>
-    
-                <tr>
-                    <td>Calendario de Noviembre</td>
-                </tr>
-             
-            <tr>
-                <td>Gran Calendario</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/atleti.png">
-                    <img src="img/Madrid.png">
-                    <img src="img/villareal.png">  
-                </td>       
-            </tr>
-            <tr>
-                <td>Buen Calendario</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/barça.png">
-                    <img src="img/bilbao.png">
-                    <img src="img/girona.png">
-                    <img src="img/sevilla.png">  
-                </td>       
-            </tr>
-            <tr>
-                <td>Neutro</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/betis.png">
-                    <img src="img/espayol.png">
-                    <img src="img/getafe.png">
-                    <img src="img/palmas.png">
-                    <img src="img/mallorca.png">
-                    <img src="img/rayo.png">          
-                </td>       
-            </tr>
-            <tr>
-                <td>Mal Calendario</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/celta.png">
-                    <img src="img/leganes.png">
-                    <img src="img/osasuna.png">     
-                </td>       
-            </tr>
-            <tr>
-                <td>Horrible Calendario</td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/alaves.png">
-                    <img src="img/reals.png">
-                    <img src="img/valencia.png">
-                    <img src="img/valladolid.png">  
-                </td>       
-            </tr>
-        </table>
-    </div>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="9">Calendario de Noviembre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="granCalendario">
+                        <td colspan="9">Gran Calendario</td>
+                    </tr>
+                    <tr class="escudos1">
+                        <td><img src="img/atleti.png" alt="Atlético"></td>
+                        <td><img src="img/Madrid.png" alt="Real Madrid"></td>
+                        <td><img src="img/villareal.png" alt="Villarreal"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="buenCalendario">
+                        <td colspan="9">Buen Calendario</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/barça.png" alt="Barcelona"></td>
+                        <td><img src="img/bilbao.png" alt="Athletic Bilbao"></td>
+                        <td><img src="img/girona.png" alt="Girona"></td>
+                        <td><img src="img/sevilla.png" alt="Sevilla"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="neutro">
+                        <td colspan="9">Neutro</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/betis.png" alt="Betis"></td>
+                        <td><img src="img/espayol.png" alt="Espanyol"></td>
+                        <td><img src="img/getafe.png" alt="Getafe"></td>
+                        <td><img src="img/palmas.png" alt="Las Palmas"></td>
+                        <td><img src="img/mallorca.png" alt="Mallorca"></td>
+                        <td><img src="img/rayo.png" alt="Rayo Vallecano"></td>
+                    </tr>
+                    <tr id="malCalendario">
+                        <td colspan="9">Mal Calendario</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/celta.png" alt="Celta"></td>
+                        <td><img src="img/leganes.png" alt="Leganés"></td>
+                        <td><img src="img/osasuna.png" alt="Osasuna"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr id="horribleCalendario">
+                        <td colspan="9">Horrible Calendario</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/alaves.png" alt="Alavés"></td>
+                        <td><img src="img/reals.png" alt="Real Sociedad"></td>
+                        <td><img src="img/valencia.png" alt="Valencia"></td>
+                        <td><img src="img/valladolid.png" alt="Valladolid"></td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <script src="js/script.js"></script>
 </body>

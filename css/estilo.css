@@ -1,201 +1,189 @@
 html, body {
     font-family: Arial, sans-serif;
-    background-color: black; /* Cambiado a un gris oscuro para mejor contraste */
-    color: white; /* Cambiado a blanco para mejorar la visibilidad sobre fondo oscuro */
+    background-color: #121212; /* Fondo gris oscuro */
+    color: #ffffff;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 header {
-    width: 100%;
-    height: 60px;
+    display: flex;
+    align-items: center;
     background-color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #333;
 }
 
-hr {
-    border-color: #333; /* Ajustado para un tono más oscuro */
-}
-
-header > img {
-    width: 70px;
-    height: 60px;
-}
-
-header > div > img {
-    width: 50px;
-    height: 40px;
-}
-
-main > div {
-    position: absolute;
-    top: 12%;
-    left: 25%;
-    width: 50%;
-    height: 63%;
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #menu-icon {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s;
 }
 
 #menu-icon:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Ajustado a sombra clara */
+    transform: scale(1.1);
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 80px;
+    background-color: #000;
+    width: 200px;
+    border: 1px solid #444;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
 }
 
 .hidden {
     display: none;
 }
 
-#dropdown-menu {
-    position: absolute;
-    top: 60px;
-    background-color: #000;
-    width: 12%; /* Leve ajuste en ancho */
-    border: 1px solid #444; /* Bordes más oscuros */
-    padding: 10px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    z-index: 1000;
-}
-
-#dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#dropdown-menu li {
-    margin: 5px 0;
-    color: white;
-}
-
-#dropdown-menu a {
-    text-decoration: none;
-    color: #ddd; /* Color más claro para contraste */
-}
-
-thead {
-    text-align: center;
-}
-
-table, td, tr {
-    border: 1px solid #ddd;
-}
-
 table {
     width: 100%;
-    height: 100%;
-    color: white;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-td > img {
-    width: 10%;
-    height: 90px;
-}
-td > img:hover {
-    transform: scale(1.05);
-}
-
-table tr:nth-child(1) {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #fffefc;
-    color: black;
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
 }
 
-table tr:nth-child(2) {
-    background-color: #228b22; /* Color verde ajustado */
+.category-row {
+    background-color: #333;
+}
+#granCalendario{
+    background-color: darkgreen;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#buenCalendario{
+    background-color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#neutro{
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#malCalendario{
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#horribleCalendario{
+    background-color: brown;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-table tr:nth-child(4) {
-    background-color: #9acd32; /* Verde más claro */
+td img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.2s;
 }
 
-table tr:nth-child(6) {
-    background-color: #ffd700; /* Amarillo dorado */
-}
+td img:hover {
+    transform: scale(1.1);
+}   
 
-table tr:nth-child(8) {
-    background-color: #ff4500; /* Rojo anaranjado */
-}
-
-table tr:nth-child(10) {
-    background-color: #8b4513; /* Marrón oscuro */
-}
-
+/* Media Queries para dispositivos móviles */
+/* Media query para pantallas de 768px o menos (tabletas y móviles en orientación vertical) */
 @media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+        padding: 10px;
+    }
+
+    /* Header y navegación */
     header {
-        height: 40px;
-    }
-    header > img {
-        width: 45px;
         height: 50px;
+        padding: 5px;
     }
+
+    #menu-icon {
+        width: 40px;
+        height: auto;
+    }
+
     #dropdown-menu {
-        width: 80%;
-        
-    }
-    main > div {
-        top: 15%;
-        left: 5%;
-        width: 90%;
-    }
-    td > img {
-        width: 20%;
-        height: 60px;
-    }
-    table {
         width: 100%;
+        padding: 5px;
+        top: 50px;
+    }
+
+    /* Ajustes en la tabla */
+    table {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    td img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Estilos para las filas de categoría */
+    .category-row {
         font-size: 14px;
     }
-    table tr:nth-child(1),
-    table tr:nth-child(2),
-    table tr:nth-child(4),
-    table tr:nth-child(6),
-    table tr:nth-child(8),
-    table tr:nth-child(10) {
+}
+
+/* Media query para pantallas de 480px o menos (móviles pequeños) */
+@media (max-width: 480px) {
+    /* Ajustes generales */
+    body {
         font-size: 12px;
     }
-}
-@media (max-width: 1000px) and (orientation: landscape) {
+
+    /* Header y navegación */
     header {
-        height: 50px;
+        height: 40px;
+        padding: 5px;
     }
-    header > img {
-        width: 60px;
-        height: 50px;
+
+    #menu-icon {
+        width: 35px;
+        height: auto;
     }
 
     #dropdown-menu {
-        width: 80%;
-        top: 50px; /* Ajuste para mantener el menú visible */
-    }
-
-    main > div {
-        top: 20%;
-        left: 5%;
-        width: 90%;
-    }
-
-    td > img {
-        width: 9%;
-        height: 50px;
-    }
-
-    table {
         width: 100%;
         font-size: 12px;
     }
 
-    table tr:nth-child(1),
-    table tr:nth-child(2),
-    table tr:nth-child(4),
-    table tr:nth-child(6),
-    table tr:nth-child(8),
-    table tr:nth-child(10) {
+    /* Ajustes en la tabla */
+    table {
         font-size: 10px;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+
+    td img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Estilos para las filas de categoría */
+    .category-row {
+        font-size: 12px;
     }
 }
 
