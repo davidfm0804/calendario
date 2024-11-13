@@ -161,7 +161,8 @@ td img:hover {
         padding: 5px;
     }
     nav>img{
-        width: 20%;
+        width: 40%;
+        height: 10%;
     }
 
     #menu-icon {
@@ -170,7 +171,7 @@ td img:hover {
     }
 
     #enlace1{
-        width: 30%;
+        width: 50%;
         padding: 5px;
         top: 50px;
     }
@@ -214,10 +215,11 @@ td img:hover {
         height: auto;
     }
     nav>img{
-        width: 20%;
+        width: 40%;
+        height: 10%;
     }
     #enlace1 {
-        width: 30%;
+        width: 50%;
         font-size: 12px;
     }
 
