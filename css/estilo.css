@@ -45,12 +45,66 @@ nav {
 .hidden {
     display: none;
 }
+thead th {
+    font-size: 2rem; /* Aumenta el tamaño de la fuente */
+    color: #ffcc00; /* Cambia el color del texto a un amarillo vibrante */
+    background: linear-gradient(90deg, #444, #222); /* Fondo degradado */
+    padding: 15px; /* Añade espacio alrededor del texto */
+    border-bottom: 2px solid yellow; /* Subrayado estilizado */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+}
+/* Estilo para el Modo Claro */
+.light-mode main,.light-mode thead th {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Bordes grises en Modo Claro */
+.light-mode table, 
+.light-mode nav, 
+.light-mode th, 
+.light-mode td {
+    border-color: black; /* Color gris para los bordes */
+}
+/* Ajusta los colores de los elementos dentro del modo claro si es necesario */
+
+/* Definir la animación de rebote al hacer clic */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Definir la animación para el efecto hover */
+@keyframes hover-scale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Aplicar la animación al hacer clic */
+.animate-bounce {
+    animation: bounce 0.3s ease-in-out;
+}
+
+/* Aplicar la animación al pasar el ratón por encima */
+#light-mode-toggle:hover {
+    animation: hover-scale 0.2s ease-in-out forwards;
+}
+
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
+
 
 th, td {
     border: 1px solid #ddd;
