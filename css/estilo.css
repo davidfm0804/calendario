@@ -147,8 +147,6 @@ td img {
 td img:hover {
     transform: scale(1.1);
 }   
-
-/* Media Queries para dispositivos móviles */
 /* Media query para pantallas de 768px o menos (tabletas y móviles en orientación vertical) */
 @media (max-width: 768px) {
     /* Ajustes generales */
@@ -168,7 +166,7 @@ td img:hover {
         height: auto;
     }
 
-    #dropdown-menu {
+    #enlace1{
         width: 100%;
         padding: 5px;
         top: 50px;
@@ -213,7 +211,7 @@ td img:hover {
         height: auto;
     }
 
-    #dropdown-menu {
+    #enlace1 {
         width: 100%;
         font-size: 12px;
     }
