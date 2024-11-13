@@ -54,11 +54,10 @@ thead th {
     text-transform: uppercase; /* Transforma el texto a mayúsculas */
 }
 /* Estilo para el Modo Claro */
-.light-mode main {
+.light-mode table {
     background-color: #ffffff;
     color: #000000;
 }
-
 /* Bordes grises en Modo Claro */
 .light-mode table, 
 .light-mode nav, 
