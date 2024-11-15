@@ -34,6 +34,7 @@ nav {
 #enlace1 {
     background-color: #222; /* Fondo oscuro para que resalte más */
     width: auto; /* Deja que el ancho se ajuste al contenido */
+    box-sizing: border-box;
     padding: 10px;
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1); /* Sombra sutil */
@@ -46,6 +47,7 @@ nav {
 
 #enlace1 a {
     color: #ffcc00; /* Color amarillo vibrante */
+    
     text-decoration: none; /* Eliminar subrayado */
     font-weight: bold; /* Hacer el texto más destacado */
     font-size: 1.1rem; /* Aumentar ligeramente el tamaño de fuente */
