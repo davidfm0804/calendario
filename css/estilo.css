@@ -220,7 +220,7 @@ td img:hover {
     }
     #enlace1 {
         width: 100%; /* Mantener el ancho completo */
-        height: 10px;
+        height: 80px;
         font-size: 12px; /* Reducir aún más el tamaño del texto */
         padding: 5px; /* Reducir el padding */
         text-align: center; /* Centrar el contenido */
