@@ -166,10 +166,16 @@ td img:hover {
         height: auto;
     }
 
-    #enlace1{
-        width: 70%;
-        padding: 5px;
-        top: 30px;
+    #enlace1 {
+        width: 100%; /* Aumentar el ancho para que ocupe toda la pantalla */
+        font-size: 14px; /* Reducir el tamaño del texto */
+        padding: 8px; /* Ajustar el padding */
+        text-align: center; /* Centrar el contenido */
+    }
+
+    #enlace1 a {
+        font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
+        padding: 6px 8px; /* Ajustar el padding interno */
     }
 
     /* Ajustes en la tabla */
@@ -211,8 +217,14 @@ td img:hover {
         height: auto;
     }
     #enlace1 {
-        width: 70%;
-        font-size: 12px;
+        width: 100%; /* Mantener el ancho completo */
+        font-size: 12px; /* Reducir aún más el tamaño del texto */
+        padding: 5px; /* Reducir el padding */
+        text-align: center; /* Centrar el contenido */
+    } 
+    #enlace1 a {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 4px 6px; /* Ajustar el padding interno */
     }
 
     /* Ajustes en la tabla */
